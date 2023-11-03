@@ -10,7 +10,7 @@ def count_batteries_by_health(present_capacities):
     if(p >= 80): battery["healthy"] += 1
     elif(p >= 62): battery["exchange"] += 1
     else: battery["failed"] += 1
-
+  return battery
 
 def test_bucketing_by_health():
   print("Counting batteries by SoH...\n")
